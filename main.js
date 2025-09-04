@@ -24,4 +24,8 @@ client.on('message_create', message => {
 		// send back "pong" to the chat the message was sent in
 		client.sendMessage(message.from, 'pong');
 	}
+	// another example
+	if (message.body === 'good morning') {
+		client.sendMessage(message.from, 'Good morning! Have a nice day :)');
+	}
 });
