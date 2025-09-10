@@ -28,4 +28,10 @@ client.on('message_create', message => {
 	if (message.body === 'good morning') {
 		client.sendMessage(message.from, 'Good morning! Have a nice day :)');
 	}
+	// exact word of "how may i help you" will trigger the response
+	{
+	if (message.body === 'how may i help you') {
+		client.sendMessage(message.from, 'I am a bot, I am here to help you!');
+	}
 });
+
