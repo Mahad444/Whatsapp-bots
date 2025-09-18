@@ -36,7 +36,8 @@ client.on('message_create', message => {
 		if (message.body.includes('support')) {
 			client.sendMessage(message.from, 'Please contact our support team at support@example.com');
 		} else if (message.body.includes('sales')) {
-			client.sendMessage(message.from, 'Please contact our sales team at sales@example.com');
+			client.sendMessage(message.from, 'Please contact our sales team at sales@cubeouttech.com');
+
 	}
 	}
 });
