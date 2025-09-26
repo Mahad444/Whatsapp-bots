@@ -8,3 +8,12 @@ const path = require('path');
 const SESSION_FILE_PATH = path.join(__dirname, 'session.json');
 
 // Load the session data if it exists
+let sessionData;
+if (fs.existsSync(SESSION_FILE_PATH)) {
+    sessionData = require(SESSION_FILE_PATH);
+}
+
+// Create a new WhatsApp client instance
+const client = new Client({
+    session: sessionData
+});
