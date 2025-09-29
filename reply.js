@@ -23,3 +23,14 @@ client.on('qr', (qr) => {
     // Generate and display the QR code in the terminal
     qrcode.generate(qr, { small: true });
 });
+
+client.on('authenticated', (session) => {
+    // Save the session data to a file
+    fs.writeFile(SESSION_FILE_PATH, JSON.stringify(session), (err) => {
+        if (err) {
+            console.error('Error saving session:', err);
+        } else {
+            console.log('Session saved successfully.');
+        }
+    });
+});
