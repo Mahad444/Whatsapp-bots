@@ -17,3 +17,9 @@ if (fs.existsSync(SESSION_FILE_PATH)) {
 const client = new Client({
     session: sessionData
 });
+
+// answers and saves the session
+client.on('qr', (qr) => {
+    // Generate and display the QR code in the terminal
+    qrcode.generate(qr, { small: true });
+});
