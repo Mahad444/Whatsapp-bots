@@ -34,3 +34,8 @@ client.on('authenticated', (session) => {
         }
     });
 });
+
+client.on('auth_failure', (msg) => {
+    // Authentication failure message
+    console.error('Authentication failure:', msg);
+});
