@@ -39,3 +39,8 @@ client.on('auth_failure', (msg) => {
     // Authentication failure message
     console.error('Authentication failure:', msg);
 });
+
+// Log when the client is ready
+client.on('ready', () => {
+    console.log('Client is ready!');
+});
