@@ -44,3 +44,14 @@ client.on('auth_failure', (msg) => {
 client.on('ready', () => {
     console.log('Client is ready!');
 });
+
+// Listen for incoming messages and reply
+client.on('message', async (msg) => {
+    console.log(`Message from ${msg.from}: ${msg.body}`);
+    try {
+        await msg.reply('Hello! This is an automated reply.');
+        console.log('Replied to message.');
+    } catch (error) {
+        console.error('Error replying to message:', error);
+    }
+});
