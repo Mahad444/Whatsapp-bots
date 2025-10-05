@@ -55,3 +55,5 @@ client.on('message', async (msg) => {
         console.error('Error replying to message:', error);
     }
 });
+// Initialize the client
+client.initialize();
