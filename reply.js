@@ -57,3 +57,6 @@ client.on('message', async (msg) => {
 });
 // Initialize the client
 client.initialize();
+
+// Export the client for use in other modules if needed
+module.exports = client;
