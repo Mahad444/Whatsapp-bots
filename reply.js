@@ -60,3 +60,9 @@ client.initialize();
 
 // Export the client for use in other modules if needed
 module.exports = client;
+
+// reply from main.js
+
+
+// Use the client to send a message
+client.sendMessage('recipient-id', 'Hello from main.js!');
