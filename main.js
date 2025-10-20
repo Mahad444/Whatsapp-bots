@@ -40,5 +40,9 @@ client.on('message_create', message => {
 
 	}
 	}
+	// replies to messages containing "thank you" else if (message.body.toLowerCase().includes('thank you')) {
+		client.sendMessage(message.from, "You're welcome! If you have any more questions, feel free to ask.");
+	}
+
 });
 
