@@ -44,5 +44,9 @@ client.on('message_create', message => {
 		client.sendMessage(message.from, "You're welcome! If you have any more questions, feel free to ask.");
 	}
 
+	// additional responses can be added here
+	if (message.body === 'hello') {
+		client.sendMessage(message.from, 'Hello! How can I assist you today?');
+	}
 });
 
