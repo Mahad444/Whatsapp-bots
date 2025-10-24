@@ -48,5 +48,8 @@ client.on('message_create', message => {
 	if (message.body === 'hello') {
 		client.sendMessage(message.from, 'Hello! How can I assist you today?');
 	}
+
+	// more conditions and responses can be added as needed
+	
 });
 
