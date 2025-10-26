@@ -50,6 +50,9 @@ client.on('message_create', message => {
 	}
 
 	// more conditions and responses can be added as needed
+	if (message.body === 'bye') {
+		client.sendMessage(message.from, 'Goodbye! Have a great day!');
+	}	
 	
 });
 
