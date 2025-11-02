@@ -1,6 +1,7 @@
 // reply from main.js
 const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
+const { MessageMedia } = require('whatsapp-web.js');
 const fs = require('fs');
 const path = require('path');
 
@@ -60,8 +61,6 @@ client.initialize();
 
 // Export the client for use in other modules if needed
 module.exports = client;
-
-// reply from main.js
 
 
 // Use the client to send a message
