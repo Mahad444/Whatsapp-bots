@@ -57,6 +57,6 @@ client.on('message_create', message => {
 	if (message.body === 'help') {
 		client.sendMessage(message.from, 'Sure! Here are some commands you can use:\n1. !ping - to check if the bot is active\n2. good morning - to receive a morning greeting\n3. how may i help you - to get assistance\n4. thank you - to receive a polite response\n5. hello - to start a conversation\n6. bye - to end the conversation\n7. help - to see this message again');
 	}
-	// 
+	// end of message handling
 });
 
