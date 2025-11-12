@@ -67,3 +67,6 @@ client.sendMessage('recipient-id', 'Hello from main.js!');
 // import replies from reply.js
 const replyClient = require('./reply');
 
+// Use the replyClient to send a message
+replyClient.sendMessage('recipient-id', 'Hello from reply.js!');
+
