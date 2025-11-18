@@ -34,7 +34,7 @@ client.on('message_create', message => {
 		client.sendMessage(message.from, 'I am a bot, I am here to help you!');
 		// You can add more logic here to handle specific requests
 		if (message.body.includes('support')) {
-			client.sendMessage(message.from, 'Please contact our support team at support@example.com');
+			client.sendMessage(message.from, 'Please contact our support team at support@cubeouttech.com');
 		} else if (message.body.includes('sales')) {
 			client.sendMessage(message.from, 'Please contact our sales team at sales@cubeouttech.com');
 
