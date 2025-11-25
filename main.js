@@ -61,5 +61,7 @@ client.on('message_create', message => {
 	if (message.body === 'joke') {
 		client.sendMessage(message.from, 'Why did the scarecrow win an award? Because he was outstanding in his field!');
 	}
+	// console the successful reply
+	console.log(`Replied to message from ${message.from}`);
 });
 
