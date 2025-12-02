@@ -72,5 +72,4 @@ replyClient.sendMessage('recipient-id', 'Hello from reply.js!');
 
 // response to indicate successful loading
 console.log('reply.js loaded successfully.');
-// End of reply.js
-console.log('reply.js is running successfully.');
+
