@@ -64,4 +64,6 @@ client.on('message_create', message => {
 	// console the successful reply
 	console.log(`Replied to message from ${message.from} + ${name.message.body}`);
 });
+// response to indicate successful loading
+console.log('main.js loaded successfully');
 
