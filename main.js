@@ -67,3 +67,11 @@ client.on('message_create', message => {
 // response to indicate successful loading
 console.log('main.js loaded successfully');
 
+// Export the client for use in other modules if needed
+module.exports = client;
+
+// Handle errors
+client.on('auth_failure', msg => {
+	console.error('Authentication failed:', msg);
+});
+
