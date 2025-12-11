@@ -74,4 +74,8 @@ module.exports = client;
 client.on('auth_failure', msg => {
 	console.error('Authentication failed:', msg);
 });
+// coonecting to a callback
+client.on('disconnected', (reason) => {
+	console.log('Client was logged out', reason);
+});
 
